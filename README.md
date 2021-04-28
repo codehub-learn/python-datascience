@@ -2,12 +2,56 @@
 
 ## Recommended Setup
 
-- Python 3.5+
-- Python packages as shown in the `requirements.txt` (**to be added**).
+- Python 3.6+
+- Python packages as shown in the `requirements.txt`.
 
 ## How to set up your PC
 
-This course will mostly be done on Jupyter Notebooks. There are two ways to use this tool: locally or online.
+This course will mostly be done on Jupyter Notebooks. There are two ways to use this tool: locally or online. 
+
+For better compatibility between different operating systems and preinstalled python versions, the course will be done on google colab's online environment. This means that you don't need to install anything! However we highly recommend trying to install python locally on your computer also.
+
+### Online
+
+There are several online providers for hosting Jupyter notebooks. We recommend using **Google Colaboratory**.
+
+Google Colaboratory is a cloud service that lets you create and edit python notebooks through the browser. You may write blocks of code (cells) and run them to get the output immediately, as well as cells of text (markdown) embedded with images, Latex etc. Also, you can install any python library you need, although most of them are already installed.
+
+**Requirement**: google account (your gmail)
+
+You can try it out [here](https://colab.research.google.com/notebooks/intro.ipynb)!
+
+We recommend using it through your google drive. You can set it up like this:
+
+1. Sign in to your google account and visit your google drive.
+2. Create a folder that will contain the notebooks that we will use in this course.
+3. Connect colaboratory add-on to your google drive.
+4. Either upload an existing notebook and open it with colab or create a new one
+
+#### Pros:
+- Environment is already setup, no need for installations/configurations.
+- Pip and commonly used libraries are preinstalled.
+- Processing is offloaded to a remote server, no need for computational power from your end.
+
+#### Cons:
+- Requires an internet connection.
+- Slower than running it locally (in most cases).
+- Data need to be uploaded to colab (or google drive).
+
+#### Quickstart
+
+- Add a new code or text cell by clicking on the "+ Code" or "+ Text" button under the Menu bar
+- Write a python command on a code cell (e.g. print ("hello world) )
+- Run it by clicking the "play" button on the left of a code cell or by clicking Shift+Enter 
+- To run an os command add "!" in the beggining (e.g. !pip3 list)
+- Double-click on a text cell (markdown) in order to edit it
+- You can use a GPU by selecting "Runtime -> Change runtime type" and setting the "Hardware accelerator"
+- To upload a file to colab, click on the "Files" tab on the left, then click "Upload" and select a file
+- You may also click on "Mount Drive" to get access to all your files on drive
+- Install a python library using pip3 (e.g !pip3 install --upgrade scikit-learn)
+- Import a library (e.g. import pandas)
+- Download your code as a python file by selecting "File -> Dowload .py"
+- Restart kernel (reset all variables) by selecting "Runtime -> Restart runtime..."
 
 ### Locally (for Windows)
 
@@ -24,45 +68,10 @@ This course will mostly be done on Jupyter Notebooks. There are two ways to use 
     - Open a command prompt and type the command `pip`.
     - If it doesn't exist type `python -m pip`. If this works, you can add pip to your environmental variables (look above on how to do this). `
     - If pip isn't installed, download the installer from [here](https://bootstrap.pypa.io/get-pip.py) and run it as a python scripy: `python get-pip.py`.
- 4. Install Jupyter through pip: `pip install jupyter`.
+ 4. Download `requirements.txt` and install them with pip: `pip install -r requirements.txt`.
 
 ### Locally (other OS)
 
 Install python and pip through the OS's default package manager. Then run step 4 from before.
 
-### Online
-
-There are several online providers for hosting Jupyter notebooks. We recommend using **Google Colaboratory**.
-
-Google Colaboratory is a cloud service that lets you create and edit python notebooks through the browser. You may write blocks of code (cells) and run them to get the output immediately, as well as cells of text (markdown) embedded with images, Latex etc. Also, you can install any python library you need, although most of them are already installed.
-
-* Requirement: google account (your gmail)
-
-To start using colab visit it [here](https://colab.research.google.com/notebooks/intro.ipynb)
-
-Sign in with your google account
-
-You are redirected to colab's introduction notebook
-
-Create a new blank notebook by choosing "File -> New Notebook"
-
-You can also, open an existing one by choosing "File -> Upload Notebook" and select a notebook from your computer or Google drive
-
-**Basic features:**
-
-*   Add a new code or text cell by clicking on the "+ Code" or "+ Text" button under the Menu bar
-*   Write a python command on a code cell (e.g. print ("hello world) )
-*   Run it by clicking the "play" button on the left of a code cell or by clicking Shift+Enter 
-*   To run an os command add "!" in the beggining (e.g. !pip3 list)
-*   Double-click on a text cell (markdown) in order to edit it
-*   You can use a GPU by selecting "Runtime -> Change runtime type" and setting the "Hardware accelerator"
-*   To upload a file to colab, click on the "Files" tab on the left, then click "Upload" and select a file
-*   You may also click on "Mount Drive" to get access to all your files on drive
-*   Install a python library using pip3 (e.g !pip3 install --upgrade scikit-learn)
-*   Import a library (e.g. import pandas)
-*   Download your code as a python file by selecting "File -> Dowload .py"
-*   Restart kernel (reset all variables) by selecting "Runtime -> Restart runtime..."
-
-
-
-
+*Note: Most linux and OSX distributions have Python 2 preinstalled. This is not compatible with what we will be seeing in this course. Either install Python 3 locally, or use the online tool described above!* 
