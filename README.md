@@ -26,7 +26,14 @@ We recommend using it through your google drive. You can set it up like this:
 1. Sign in to your google account and visit your google drive.
 2. Create a folder that will contain the notebooks that we will use in this course.
 3. Connect colaboratory add-on to your google drive.
+
+![](https://github.com/codehub-learn/python-datascience/blob/master/figures/step1c.png)
+![](https://github.com/codehub-learn/python-datascience/blob/master/figures/step2c.png)
+![](https://github.com/codehub-learn/python-datascience/blob/master/figures/step3c.png)
+
 4. Either upload an existing notebook and open it with colab or create a new one
+
+![](https://github.com/codehub-learn/python-datascience/blob/master/figures/step4c.png)
 
 #### Pros:
 - Environment is already setup, no need for installations/configurations.
@@ -39,6 +46,8 @@ We recommend using it through your google drive. You can set it up like this:
 - Data need to be uploaded to colab (or google drive).
 
 #### Quickstart
+
+![](https://github.com/codehub-learn/python-datascience/blob/master/figures/step5c.png)
 
 - Add a new code or text cell by clicking on the "+ Code" or "+ Text" button under the Menu bar
 - Write a python command on a code cell (e.g. print ("hello world) )
